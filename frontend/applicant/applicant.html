@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Applicant Dashboard</title>
+  <link rel="stylesheet" href="applicant.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Applicant Dashboard</h1>
+
+  <nav>
+    <button onclick="showSection('profile')">Profile</button>
+    <button onclick="showSection('schedules')">Interview Schedules</button>
+    <button onclick="showSection('notifications')">Notifications</button>
+  </nav>
+
+  <!-- Profile Section -->
+  <section id="profile" class="content-section">
+    <h2>My Profile</h2>
+    <div id="applicant-profile"></div>
+  </section>
+
+  <!-- Interview Schedules Section -->
+  <section id="schedules" class="content-section" style="display:none;">
+    <h2>Interview Schedules</h2>
+    <div id="applicant-schedules"></div>
+  </section>
+
+  <!-- Notifications Section -->
+  <section id="notifications" class="content-section" style="display:none;">
+    <h2>Notifications</h2>
+    <div id="applicant-notifications"></div>
+  </section>
+
+</div>
+
+<script src="applicant.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interviewer Dashboard</title>
+  <link rel="stylesheet" href="interviewer.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Interviewer Dashboard</h1>
+
+  <nav>
+    <button onclick="showSection('schedules')">My Schedules</button>
+    <button onclick="showSection('notifications')">Notifications</button>
+  </nav>
+
+  <section id="schedules" class="content-section">
+    <h2>My Schedules</h2>
+    <div id="interviewer-schedules"></div>
+  </section>
+
+  <section id="notifications" class="content-section" style="display:none;">
+    <h2>Notifications</h2>
+    <div id="interviewer-notifications"></div>
+  </section>
+
+</div>
+
+<script src="interviewer.js"></script>
+
+</body>
+</html>
