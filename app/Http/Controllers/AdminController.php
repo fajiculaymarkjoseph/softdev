@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Admin;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Log;  // ✅ Add this at the top of the file
+use Illuminate\Support\Facades\Log;  
 
 
 class AdminController extends Controller
